@@ -2,11 +2,11 @@ const expect = chai.expect;
 
 describe('index.js', function () {
   describe('companyName', function () {
-    companyName('is set as Scuber', function () {
+    it('is set as Scuber', function () {
       expect(companyName).to.equal('Scuber');
     });
 
-    companyName('raises error if the companyName is changed', function () {
+    it('raises error if the companyName is changed', function () {
       expect(function () { companyName = 'specialCompany' }).to.throw(TypeError);
     });
   });
